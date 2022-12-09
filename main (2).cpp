@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+#include <fstream>
+#include <string>
+int main() {
+ifstream file ("data.txt");
+  string line;
+  int points;
+  while (getline(file, line)) {
+    if(line=="A X"){points+=4;}
+    if(line=="A Y"){points+=8;}
+    if(line=="A Z"){points+=3;}
+    if(line=="B X"){points+=1;}
+     if(line=="B Y"){points+=5;}
+     if(line=="B Z"){points+=9;}
+      if(line=="C X"){points+=7;}
+     if(line=="C Y"){points+=2;}
+     if(line=="C Z"){points+=6;}}
+    cout<<points;
+}
